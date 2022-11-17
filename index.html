@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Владислав Локтяев</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <div class="row multiline">
         <div class="nine columns">
-          <h1 style="font-weight: bold">Локтяев Владислав Алексеевич</h1>
-          <h3 style="font-weight: bold">Разработчик на Ruby on Rails</h3>
+          <h1 class="bold-text">Локтяев Владислав Алексеевич</h1>
+          <h3 class="bold-text">Разработчик на Ruby on Rails</h3>
           <h3>26 лет</h3>
-          <table class="u-full-width">
-            <tbody>
-              <tr>
-                <td>&#128205; Кемерово, Кемеровская область</td>
-                <td>&#128222; +7 923 610-49-07</td>
-                <td>&#128386; koshmareg@yandex.ru</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
-        <div class="three columns" style="text-align: right">
-          <img src="photo.jpg" alt="Photo" height="260" />
+        <div class="three columns mt">
+          <img src="photo.jpg" alt="Photo" class="photo" />
+        </div>
+      </div>
+      <div class="row multiline">
+        <div class="four columns center inline">
+          <img src="svg/geo-alt-fill.svg" class="icon" />
+          <p>Кемерово, Кемеровская область</p>
+        </div>
+        <div class="four columns center inline mt">
+          <img src="svg/telephone-fill.svg" class="icon" />
+          <a href="tel:+79236104907">+7 (923) 610-49-07</a>
+        </div>
+        <div class="four columns center inline mt">
+          <img src="svg/envelope.svg" class="icon" />
+          <a href="mailto:koshmareg@yandex.ru">koshmareg@yandex.ru</a>
         </div>
       </div>
       <h3>Образование</h3>
-      <div class="row">
+      <div class="row multiline">
         <div class="ten columns">
-          <p style="font-weight: bold">Кузбасский государственный технический университет имени Т.Ф. Горбачева, Высшее</p>
+          <p class="bold-text">Кузбасский государственный технический университет имени Т.Ф. Горбачева, Высшее</p>
           <p>Теплоэнергетика и теплотехника</p>
         </div>
         <div class="two columns">
-          <p style="text-align: right">2020</p>
+          <p class="bold-text right-desktop">2020</p>
         </div>
       </div>
       <h3>Курсы</h3>
-      <div class="row">
+      <div class="row multiline">
         <div class="ten columns">
-          <p style="font-weight: bold">Хороший программист</p>
+          <p class="bold-text">Хороший программист</p>
           <p>Ruby on Rails</p>
         </div>
         <div class="two columns">
-          <p style="text-align: right">2023</p>
+          <p class="bold-text right-desktop">2023</p>
         </div>
       </div>
       <h3>Навыки</h3>
@@ -54,7 +60,7 @@
       <h3>Знание языков</h3>
       <p>Английский - B1 средний</p>
       <h3>Личные качества</h3>
-      <p>Усидчивость, внимательность, быстаря обучаемость, креативность</p>
+      <p>Усидчивость, внимательность, быстаря обучаемость, креативность, стрессоустойчивость</p>
     </div>
   </body>
 </html>

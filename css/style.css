@@ -1,0 +1,34 @@
+/* Typography */
+.bold-text { font-weight: bold; }
+
+/* Alignment */
+.center {
+  align-items: center;
+  justify-content: center;
+}
+.inline {
+  display: inline-flex;
+}
+.icon {
+  margin-bottom: auto;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .right-desktop { text-align: right; }
+}
+
+/* Indents */
+.mt { margin-bottom: 2rem; }
+
+/* Transfers */
+.multiline { flex-wrap: wrap; }
+
+/* Photo */
+.photo {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-class {
+  background-color: rgb(245, 245, 245);
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: rgb(33, 37, 41);
+  font-size: 1rem;
+}
+
+/* Intro */
+.intro {
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  position: relative;
+  color:rgb(245, 245, 245);
+}
+
+@media (max-width: 698px) {
+  .intro {
+    height: auto;
+  }
+}
+
+/* Container */
+.container {
+  min-height: 100%;
+  padding: 0 .5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -10%);
+}
+
+@media (max-width: 698px) {
+  .container-absolute {
+    transform: translate(-50%, -42%);
+  }
+}
+
+/* Columns */
+.col {
+  margin-bottom: .5rem;
+}
+
+/* Row */
+.row {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (max-width: 698px) {
+  .gapless {
+    gap: 0;
+  }
+}
+
+@media (min-width: 698px) {
+  .row-50-50 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 698px) {
+  .row-60-40 {
+    grid-template-columns: 6fr 4fr;
+  }
+}
+
+.row-20-80 {
+  grid-template-columns: 2fr 8fr;
+}
+
+.row-50-50-fix {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Text */
+.text {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.small-text {
+  font-size: .8rem;
+}
+
+.middle-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.large-text {
+  font-size: 3rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Box */
+@media (min-width: 0px) {
+  .box {
+    width: 100%;
+  }
+}
+
+@media (min-width: 698px) {
+  .box {
+    width: 90%;
+  }
+}
+
+.box-right {
+  float: right;
+  margin-left: 1rem;
+}
+
+.box-full {
+  width: 100%;
+}
+
+.recipe-box {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+/* Card */
+.card {
+  max-width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  margin-top: .5rem;
+}
+
+/* Image */
+.image {
+  width: 100%;
+  margin: none;
+}
+
+.image-50 {
+  width: 50%;
+}
+
+.image-25 {
+  width: 25%;
+}
+
+.image-rounded {
+  border-radius: 1rem;
+  margin-top: .5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+@media (max-width: 698px) {
+  .avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 0px) {
+  .recipe-image {
+    height: 220px;
+  }
+}
+
+@media (min-width: 450px) {
+  .recipe-image {
+    height: 360px;
+  }
+}
+
+.intro-image {
+  width: 100;
+  filter: brightness(50%);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: rgb(252, 252, 104);
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+/* Link */
+.link {
+  text-decoration: none;
+  color:rgb(33, 37, 41);
+}
+
+/* Button */
+.button {
+  background-color: rgb(33, 37, 41);
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  width: 8rem;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  display: block;
+  margin: .5rem 0;
+}
+
+/* Aligment */
+@media (min-width: 698px) {
+  .mt {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 890px) {
+  .mt {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 890px) {
+  .mt-footer {
+    margin-top: 2.5rem;
+  }
+}
+
+.mb {
+  margin-bottom: 1rem;
+}

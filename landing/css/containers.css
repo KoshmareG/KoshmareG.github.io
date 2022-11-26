@@ -31,7 +31,7 @@
 
 .container-green {
   background-color: rgb(143, 193, 71);
-  box-shadow: inset 0px 0px 1000px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 100px 15px rgba(0, 0, 0, 0.5);
 }
 
 .container-grey {

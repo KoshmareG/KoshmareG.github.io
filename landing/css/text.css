@@ -1,0 +1,57 @@
+.text {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.text-intro {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(245, 245, 245);
+}
+
+@media (min-width: 698px) {
+  .text-intro {
+    font-size: 5rem;
+  }
+}
+
+.header-text {
+  font-size: 2rem;
+  color: rgb(245, 245, 245);
+}
+
+@media (max-width: 968px) {
+  .header-text {
+    font-size: 1.2rem;
+  }
+}
+
+.text-white {
+  color: rgb(245, 245, 245);
+}
+
+@media (max-width: 800px) {
+  .text-middle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .text-middle {
+    font-size: 1rem;
+  }
+}
+
+.text-small {
+  font-size: 1.2rem;
+  color: rgb(245, 245, 245);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 800px) {
+  .text-small {
+    font-size: .8rem;
+  }
+}

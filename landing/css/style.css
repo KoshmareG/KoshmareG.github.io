@@ -4,245 +4,129 @@
 }
 
 .main-class {
-  background-color: rgb(245, 245, 245);
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: rgb(33, 37, 41);
   font-size: 1rem;
+  height: 100%;
 }
 
-/* Intro */
 .intro {
-  width: 100%;
-  height: 20rem;
-  overflow: hidden;
-  margin-bottom: 2rem;
-  position: relative;
-  color:rgb(245, 245, 245);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../img/apple.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: scroll, fixed;
+  background-position: center;
 }
 
-@media (max-width: 698px) {
-  .intro {
-    height: auto;
-  }
-}
-
-/* Container */
-.container {
-  min-height: 100%;
-  padding: 0 .5rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.container-absolute {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -10%);
-}
-
-@media (max-width: 698px) {
-  .container-absolute {
-    transform: translate(-50%, -42%);
-  }
-}
-
-/* Columns */
-.col {
-  margin-bottom: .5rem;
-}
-
-/* Row */
-.row {
-  display: grid;
-  gap: 1rem;
-}
-
-@media (max-width: 698px) {
-  .gapless {
-    gap: 0;
-  }
-}
-
-@media (min-width: 698px) {
-  .row-50-50 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 698px) {
-  .row-60-40 {
-    grid-template-columns: 6fr 4fr;
-  }
-}
-
-.row-20-80 {
-  grid-template-columns: 2fr 8fr;
-}
-
-.row-50-50-fix {
-  grid-template-columns: 1fr 1fr;
-}
-
-/* Text */
-.text {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-}
-
-.small-text {
-  font-size: .8rem;
-}
-
-.middle-text {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.large-text {
-  font-size: 3rem;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.text-right {
-  text-align: right;
+/* Image */
+.properties {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../img/apples.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll, fixed;
+  background-position: center;
+  box-shadow: inset 0px 0px 1000px 20px rgba(0, 0, 0, 0.5);
+  padding: 5rem 0;
 }
 
 /* Box */
-@media (min-width: 0px) {
-  .box {
-    width: 100%;
-  }
+.box {
+  width: unset;
+  flex: none;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (min-width: 698px) {
-  .box {
-    width: 90%;
-  }
-}
-
-.box-right {
-  float: right;
-  margin-left: 1rem;
-}
-
-.box-full {
+/* Input */
+.input {
+  display: block;
   width: 100%;
+  box-sizing: border-box;
+  height: 2.4rem;
+  font-size: 1.2rem;
+  margin: .5rem 0;
+  padding: 0 .5rem;
+  border-radius: .5rem;
+  border: 2px solid rgba(245, 245, 245, .8);
+  background-color: rgba(245, 245, 245, .5);
+  color: rgb(52, 54, 57);
 }
 
-.recipe-box {
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  border-radius: 1rem;
+.input:focus {
+  outline: none !important;
+  border: 2px solid rgb(245, 245, 245);
+  box-shadow: 0 0 10px rgb(82, 82, 82);
 }
 
-/* Card */
-.card {
+/* Header */
+.header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: rgba(29, 29, 31, 0.85);
+  backdrop-filter: blur(1px) saturate(2) brightness(0.8);
+  line-height: 60px;
+  padding: 0 1rem;
+}
+
+/* Aligment */
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.mb {
+  margin-bottom: 2rem;
+}
+
+/* Icons */
+.icon {
+  width: 10vh;
+  filter: invert(100%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 800px) {
+  .icon {
+    width: 6vh;
+  }
+}
+
+/* Comments */
+.comment {
   max-width: 100%;
-  background-color: rgb(255, 255, 255);
-  padding: 1rem 1rem;
-  border-radius: 1rem;
-  margin-top: .5rem;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 2rem;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 2fr 8fr;
+}
+
+.avatar {
+  width: 70%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Image */
 .image {
-  width: 100%;
-  margin: none;
-}
-
-.image-50 {
-  width: 50%;
-}
-
-.image-25 {
-  width: 25%;
-}
-
-.image-rounded {
-  border-radius: 1rem;
-  margin-top: .5rem;
-}
-
-.avatar {
-  border-radius: 50%;
-}
-
-@media (max-width: 698px) {
-  .avatar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 0px) {
-  .recipe-image {
-    height: 220px;
-  }
-}
-
-@media (min-width: 450px) {
-  .recipe-image {
-    height: 360px;
-  }
-}
-
-.intro-image {
-  width: 100;
-  filter: brightness(50%);
-}
-
-/* Footer */
-.footer {
-  width: 100%;
-  background-color: rgb(252, 252, 104);
-  margin-top: 2rem;
-  padding-top: 1rem;
-}
-
-/* Link */
-.link {
-  text-decoration: none;
-  color:rgb(33, 37, 41);
-}
-
-/* Button */
-.button {
-  background-color: rgb(33, 37, 41);
-  color: rgb(245, 245, 245);
-  text-decoration: none;
-  width: 8rem;
-  text-align: center;
-  padding: 1rem 1.5rem;
-  border-radius: .5rem;
+  width: 20%;
   display: block;
-  margin: .5rem 0;
-}
-
-/* Aligment */
-@media (min-width: 698px) {
-  .mt {
-    margin-top: 2rem;
-  }
-}
-
-@media (min-width: 890px) {
-  .mt {
-    margin-top: 4rem;
-  }
-}
-
-@media (min-width: 890px) {
-  .mt-footer {
-    margin-top: 2.5rem;
-  }
-}
-
-.mb {
-  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }

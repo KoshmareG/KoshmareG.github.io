@@ -1,0 +1,46 @@
+.container {
+  max-width: 2560px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container-full {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 0) {
+  .container-full {
+    height: 65vh;
+  }
+}
+
+@media (min-width: 800px) {
+  .container-full {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container-full {
+    height: 100vh;
+  }
+}
+
+.container-green {
+  background-color: rgb(143, 193, 71);
+  box-shadow: inset 0px 0px 1000px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container-grey {
+  background-color: rgb(220, 220, 220);
+  padding: 2rem 1rem;
+}
+
+.container-yellow {
+  background-color: rgb(255, 221, 0);
+  box-shadow: inset 0px 0px 100px 20px rgba(0, 0, 0, 0.5);
+  padding: 3rem 1rem;
+}

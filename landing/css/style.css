@@ -46,7 +46,7 @@
 
 @media (min-width: 850px) {
   .box {
-    margin-left: 4rem;
+    margin: 0 4rem;
   }
 }
 
@@ -107,6 +107,28 @@
   }
 }
 
+.mb-contact {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 800px) {
+  .mb-contact {
+    margin-bottom: 6rem;
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 20px;
+}
+
+.inline {
+  display: inline-flex;
+}
+
 /* Icons */
 .icon {
   width: 10vh;
@@ -120,6 +142,11 @@
   .icon {
     width: 6vh;
   }
+}
+
+.contact-icon {
+  width: 20px;
+  margin-right: 10px;
 }
 
 /* Comments */

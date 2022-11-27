@@ -8,6 +8,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: right;
 }
 
 @media (max-width: 850px) {

@@ -7,8 +7,13 @@
 .container-full {
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 850px) {
+  .container-full {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 0) {
@@ -36,11 +41,24 @@
 
 .container-grey {
   background-color: rgb(220, 220, 220);
-  padding: 2rem 1rem;
+  box-shadow: inset 0px 0px 100px 15px rgba(0, 0, 0, 0.5);
+  padding: 7rem 0;
+}
+
+@media (max-width: 800px) {
+  .container-grey {
+    padding: 2rem 0;
+  }
 }
 
 .container-yellow {
   background-color: rgb(255, 221, 0);
   box-shadow: inset 0px 0px 100px 20px rgba(0, 0, 0, 0.5);
-  padding: 3rem 1rem;
+  padding: 8rem 0;
+}
+
+@media (max-width: 850px) {
+  .container-yellow {
+    padding: 4rem 1rem;
+  }
 }

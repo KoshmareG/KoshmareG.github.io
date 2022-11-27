@@ -5,14 +5,15 @@
 }
 
 .text-intro {
-  font-size: 3rem;
+  font-size: 1.2rem;
   text-align: center;
   color: rgb(245, 245, 245);
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 698px) {
   .text-intro {
-    font-size: 5rem;
+    font-size: 2rem;
   }
 }
 
@@ -33,7 +34,7 @@
 
 @media (max-width: 800px) {
   .text-middle {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -47,7 +48,7 @@
   font-size: 1.2rem;
   color: rgb(245, 245, 245);
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 800px) {

@@ -35,8 +35,8 @@
   }
 }
 
-.text-white {
-  color: rgb(245, 245, 245);
+.text-info {
+  color: rgb(37, 121, 83);
 }
 
 @media (max-width: 800px) {
@@ -53,7 +53,6 @@
 
 .text-small {
   font-size: 1.2rem;
-  color: rgb(245, 245, 245);
   margin-top: 1rem;
   margin-bottom: 1rem;
 }

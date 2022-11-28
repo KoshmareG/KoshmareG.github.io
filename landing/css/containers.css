@@ -35,14 +35,19 @@
   }
 }
 
-.container-green {
-  background-color:  rgb(0, 189, 126);
-  box-shadow: inset 0px 0px 60px 10px rgba(0, 0, 0, 0.3);
+.container-info {
+  background-color: rgb(244, 255, 245);
+  padding: 7rem 0;
+}
+
+@media (max-width: 800px) {
+  .container-info {
+    padding: 4rem 0;
+  }
 }
 
 .container-light {
-  background-color: rgb(245, 245, 245);
-  box-shadow: inset 0px 0px 60px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
   padding: 7rem 0;
 }
 
@@ -54,7 +59,7 @@
 
 .container-yellow {
   background-color: rgb(255, 224, 138);
-  box-shadow: inset 0px 0px 60px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 50px 8px rgba(0, 0, 0, 0.3);
   padding: 8rem 0;
 }
 

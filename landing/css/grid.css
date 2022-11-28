@@ -1,4 +1,5 @@
 .row {
+  width: 100%;
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
@@ -28,7 +29,7 @@
 }
 
 @media (max-width: 689px) {
-  .row-order {
+  .row-one {
     grid-template-columns: 1fr;
   }
 }

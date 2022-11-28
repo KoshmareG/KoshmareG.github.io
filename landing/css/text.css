@@ -5,15 +5,22 @@
 }
 
 .text-intro {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   text-align: center;
   color: rgb(245, 245, 245);
-  margin-bottom: 4rem;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 @media (min-width: 698px) {
   .text-intro {
-    font-size: 2rem;
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 968px) {
+  .text-intro {
+    font-size: 4rem;
   }
 }
 
